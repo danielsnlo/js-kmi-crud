@@ -102,9 +102,9 @@
         for (const timestamp in existingRecords) {
           historyHTMLList += `<li>${existingRecords[timestamp]} <i id="history_${timestamp}" class="material-icons delete">&#xe872;</i></li>`;
         }
-        historyHTMLList += "</ul>";
+        historyHTMLList = "</ul>";
 
-        history = historyHTMLList;
+        history.innerHTML = historyHTMLList;
       }
 
       function handleHistoryClick(event) {
